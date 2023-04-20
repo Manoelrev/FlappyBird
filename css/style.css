@@ -1,0 +1,66 @@
+@font-face { font-family: Bitmap; src: url("../font/Bitmap.ttf"); } 
+body {
+    user-select: none;
+    text-align: center; 
+    background-image: url('../imagem/html/background_window.png');
+    background-repeat: no-repeat; 
+    background-size: 110% 110%;
+}
+img{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-family: Bitmap;
+    font-size: 15px;
+    text-shadow: 3px 3px purple;
+    color:white;
+}
+
+div{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 800px;
+}
+
+button {
+    padding: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#title{
+    width: 225px;
+}
+
+
+#point{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+  }
+
+.restart{
+    position: relative;
+    width: 100px;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+
+}
+
+.gameover{
+    position: relative;
+    width: 500px;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+}
