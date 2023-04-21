@@ -3,13 +3,13 @@
     <head>
         <title>Flappy Bird</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="dependencias/reset.css">
+        <link rel="stylesheet" href="dependencias/style.css">
         <link rel="icon" href="imagem/html/icon.png">
         <meta charset="UTF-8">
     </head>
 
     <body>
-
         <img src="imagem/terrain/background.png" hidden id="background">
         <img src="imagem/terrain/pipe_up.png"    hidden id="pipe_up"   >
         <img src="imagem/terrain/pipe_down.png"  hidden id="pipe_down" >
@@ -17,19 +17,23 @@
         <img src="imagem/Player/player.png"      hidden id="player"    >
         <img src="imagem/Player/player2.png"     hidden id="player2"   >
         <img src="imagem/Player/player1.png"     hidden id="player1"   >
-        <img src="imagem/html/title.png"         id="title"        ><br> 
         
+        <header>
+            <h1><img src="imagem/html/title.png"></h1>
+        </header>
+
+        <main>
+                <canvas height="800" width="600" id="engine"></canvas>
+                <img src="imagem/html/gameover.png" class="gameover" id="gameover" hidden>
+                <img src="imagem/html/Play.png" class="restart" id="restart" hidden onclick="startGame()">
+                <p id="point">0</p>
+                <script  src="dependencias/game.js"></script>
+        </main>
         
-        <div>
-            <canvas height="800" width="600" id="engine"></canvas>
-            <img src="imagem/html/gameover.png" class="gameover" id="gameover" hidden>
-            <img src="imagem/html/Play.png" class="restart" id="restart" hidden onclick="startGame()">
-        </div>
-
-        <p id="point">0</p>
-        <P>Recriacao feita por Manoel</P>
-
+        <footer>
+            <P>Recriacao feita por Manoel</P>
+        </footer>
     </body>
-    <script  src="JavaScript/game.js"></script>
+    
 </html>
 

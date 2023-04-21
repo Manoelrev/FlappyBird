@@ -1,0 +1,65 @@
+@font-face { font-family: Bitmap; src: url("font/Bitmap.ttf"); } 
+
+#player, #player1, #player2{
+    transform: rotate(90deg);
+}
+
+body {
+    user-select: none;
+    background-image: url('../imagem/html/background_window.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header, header img{
+    text-align: center;
+    height: 10vh;
+}
+
+main{
+    position: relative;
+    text-align: center;
+    height: 85vh;
+}
+
+main img, main canvas, main p{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+main p{
+    top:90px;
+    font-size: 40px;
+    text-align: center;
+    font-family: bitmap;
+    color: white;
+    text-shadow:purple 3px 3px;
+}
+
+canvas{
+    height: 800px;
+    width: 600px;
+}
+
+main .gameover{
+    height: 10vh;
+    top: 20%;
+}
+
+main .restart{
+    top: 50%;
+    height: 8vh;
+}
+
+footer{
+    height: 5vh;
+}
+
+footer p{
+    text-align: center;
+    font-family: bitmap;
+    color: white;
+    font-size: 20px;
+    text-shadow:purple 3px 3px;
+}
