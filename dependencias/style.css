@@ -1,4 +1,4 @@
-@font-face { font-family: Bitmap; src: url("dependencias/font/Bitmap.TTF"); } 
+@font-face { font-family: Bitmap; src: url("font/Bitmap.TTF"); } 
 
 #player, #player1, #player2{
     transform: rotate(90deg);
@@ -6,7 +6,7 @@
 
 body {
     user-select: none;
-    background-image: url('./imagem/html/background_window.png');
+    background-image: url('../imagem/html/background_window.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
